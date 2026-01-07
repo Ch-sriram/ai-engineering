@@ -18,9 +18,11 @@
     - Large model:
       1. `gpt-oss:latest` &mdash; `Context: 128K` | `Size >= 14GB`
 - Demo of using `ollama` via terminal:
-  1. `gemma3:270m`
 
-      ```terminal
+  <details>
+    <summary><strong>1. <code>gemma3:270m</code></strong></summary>
+    <pre>
+      <code>
       ~:(0m|git@main) $ ollama serve
       Error: listen tcp 127.0.0.1:11434: bind: address already in use
       ~:(0m|git@main) $ ollama run gemma3:270m
@@ -33,25 +35,25 @@
       verifying sha256 digest 
       writing manifest 
       success 
-      >>> Hi there, I'm Sriram
+      &gt;&gt;&gt; Hi there, I'm Sriram
       Hi Sriram! How can I help you today?
 
-      >>> Tell me a fun fact?
+      &gt;&gt;&gt; Tell me a fun fact?
       Did you know that the smallest animal on Earth is a pocket crab? 
 
-      >>> Another one?
+      &gt;&gt;&gt; Another one?
       Okay, another fun fact! 
 
-      >>> Go ahead?
+      &gt;&gt;&gt; Go ahead?
       Yes! 
 
-      >>> Where's the fun fact?
+      &gt;&gt;&gt; Where's the fun fact?
       That's a great question! 😊
 
-      >>> OK
+      &gt;&gt;&gt; OK
       Okay! 
 
-      >>> /?
+      &gt;&gt;&gt; /?
       Available Commands:
         /set            Set session variables
         /show           Show model information
@@ -64,7 +66,7 @@
 
       Use """ to begin a multi-line message.
 
-      >>> /show
+      &gt;&gt;&gt; /show
       Available Commands:
         /show info         Show details for this model
         /show license      Show model license
@@ -73,7 +75,7 @@
         /show system       Show system message
         /show template     Show prompt template
 
-      >>> /show info
+      &gt;&gt;&gt; /show info
         Model
           architecture        gemma3     
           parameters          268.10M    
@@ -92,12 +94,15 @@
         License
           Gemma Terms of Use                  
           Last modified: February 21, 2024    
-          ...        
-      ```
+          ...
+      </code>
+    </pre>
+  </details>
 
-  2. `phi3:latest`
-
-      ```terminal
+  <details>
+    <summary><strong>2. <code>phi3:latest</code></strong></summary>
+    <pre>
+      <code>
       ~:(0m|git@main) $ ollama run phi3:latest
       pulling manifest 
       pulling 633fc5be925f: 100% ████████████████████████████████████████████████████████████████████████████████████████▏ 2.2 GB
@@ -108,10 +113,10 @@
       verifying sha256 digest 
       writing manifest 
       success 
-      >>> Hi, I'm Sriram
+      &gt;&gt;&gt; Hi, I'm Sriram
       Hello! How can I assist you today?
 
-      >>> Tell me what's the weather like in Australia in an yearly basis?
+      &gt;&gt;&gt; Tell me what's the weather like in Australia in an yearly basis?
       As of my latest update, here is a general outline for Australian climate throughout different seasons:
       - Spring (September to November): Generally mild with warm days and cool nights. The southern parts tend to be warmer while the northern regions experience more rainfall due to convective thunderstorm 
       activity known as "monsoon season." This can lead to flooding in some areas, especially along the eastern coast where it's heavily populated.
@@ -124,4 +129,6 @@
 
       This gives a rough idea based on historical weather patterns, climate data over the past decades suggest that temperatures have been rising with an increased frequency of heatwaves and drought conditions 
       especially during summers affecting agriculture (notably grain crops) in some areas along the east coast like Queensland.
-      ```
+      </code>
+    </pre>
+  </details>
