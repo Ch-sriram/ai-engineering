@@ -56,8 +56,8 @@
       Available Commands:
         /set            Set session variables
         /show           Show model information
-        /load <model>   Load a session or model
-        /save <model>   Save your current session
+        /load &lt;model>   Load a session or model
+        /save &lt;model>   Save your current session
         /clear          Clear session context
         /bye            Exit
         /?, /help       Help for a command
@@ -86,7 +86,7 @@
           completion    
 
         Parameters
-          stop     "<end_of_turn>"    
+          stop     "&lt;end_of_turn>"    
           top_k    64                 
           top_p    0.95               
 
