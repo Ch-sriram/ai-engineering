@@ -21,39 +21,38 @@
 
   <details>
     <summary><strong>1. <code>gemma3:270m</code></strong></summary>
-    <pre>
-      <code>
+    <pre><code>
       ~:(0m|git@main) $ ollama serve
       Error: listen tcp 127.0.0.1:11434: bind: address already in use
       ~:(0m|git@main) $ ollama run gemma3:270m
-      pulling manifest 
+      pulling manifest
       pulling 735af2139dc6: 100% █████████████████████████████████████████████████████████████████████████████████████████ 291 MB
       pulling 4b19ac7dd2fb: 100% █████████████████████████████████████████████████████████████████████████████████████████ 476 B
       pulling 3e2c24001f9e: 100% █████████████████████████████████████████████████████████████████████████████████████████ 8.4 KB
       pulling 339e884a40f6: 100% █████████████████████████████████████████████████████████████████████████████████████████▏61 B
       pulling 74156d92caf6: 100% █████████████████████████████████████████████████████████████████████████████████████████▏490 B
-      verifying sha256 digest 
-      writing manifest 
-      success 
-      &gt;&gt;&gt; Hi there, I'm Sriram
+      verifying sha256 digest
+      writing manifest
+      success
+      >>> Hi there, I'm Sriram
       Hi Sriram! How can I help you today?
 
-      &gt;&gt;&gt; Tell me a fun fact?
+      >>> Tell me a fun fact?
       Did you know that the smallest animal on Earth is a pocket crab? 
 
-      &gt;&gt;&gt; Another one?
+      >>> Another one?
       Okay, another fun fact! 
 
-      &gt;&gt;&gt; Go ahead?
+      >>> Go ahead?
       Yes! 
 
-      &gt;&gt;&gt; Where's the fun fact?
+      >>> Where's the fun fact?
       That's a great question! 😊
 
-      &gt;&gt;&gt; OK
+      >>> OK
       Okay! 
 
-      &gt;&gt;&gt; /?
+      >>> /?
       Available Commands:
         /set            Set session variables
         /show           Show model information
@@ -66,7 +65,7 @@
 
       Use """ to begin a multi-line message.
 
-      &gt;&gt;&gt; /show
+      >>> /show
       Available Commands:
         /show info         Show details for this model
         /show license      Show model license
@@ -75,7 +74,7 @@
         /show system       Show system message
         /show template     Show prompt template
 
-      &gt;&gt;&gt; /show info
+      >>> /show info
         Model
           architecture        gemma3     
           parameters          268.10M    
@@ -95,28 +94,26 @@
           Gemma Terms of Use                  
           Last modified: February 21, 2024    
           ...
-      </code>
-    </pre>
+      </code></pre>
   </details>
 
   <details>
     <summary><strong>2. <code>phi3:latest</code></strong></summary>
-    <pre>
-      <code>
+    <pre><code>
       ~:(0m|git@main) $ ollama run phi3:latest
-      pulling manifest 
+      pulling manifest
       pulling 633fc5be925f: 100% ████████████████████████████████████████████████████████████████████████████████████████▏ 2.2 GB
       pulling fa8235e5b48f: 100% ████████████████████████████████████████████████████████████████████████████████████████▏ 1.1 KB
       pulling 542b217f179c: 100% ████████████████████████████████████████████████████████████████████████████████████████▏  148 B
       pulling 8dde1baf1db0: 100% ████████████████████████████████████████████████████████████████████████████████████████▏   78 B
       pulling 23291dc44752: 100% ████████████████████████████████████████████████████████████████████████████████████████▏  483 B
-      verifying sha256 digest 
-      writing manifest 
-      success 
-      &gt;&gt;&gt; Hi, I'm Sriram
+      verifying sha256 digest
+      writing manifest
+      success
+      >>> Hi, I'm Sriram
       Hello! How can I assist you today?
 
-      &gt;&gt;&gt; Tell me what's the weather like in Australia in an yearly basis?
+      >>> Tell me what's the weather like in Australia in an yearly basis?
       As of my latest update, here is a general outline for Australian climate throughout different seasons:
       - Spring (September to November): Generally mild with warm days and cool nights. The southern parts tend to be warmer while the northern regions experience more rainfall due to convective thunderstorm 
       activity known as "monsoon season." This can lead to flooding in some areas, especially along the eastern coast where it's heavily populated.
@@ -129,6 +126,5 @@
 
       This gives a rough idea based on historical weather patterns, climate data over the past decades suggest that temperatures have been rising with an increased frequency of heatwaves and drought conditions 
       especially during summers affecting agriculture (notably grain crops) in some areas along the east coast like Queensland.
-      </code>
-    </pre>
+      </code></pre>
   </details>
