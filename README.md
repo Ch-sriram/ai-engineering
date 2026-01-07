@@ -21,7 +21,8 @@
 
   <details>
     <summary><strong>1. <code>gemma3:270m</code></strong></summary>
-    <pre><code>
+
+    ```terminal
       ~:(0m|git@main) $ ollama serve
       Error: listen tcp 127.0.0.1:11434: bind: address already in use
       ~:(0m|git@main) $ ollama run gemma3:270m
@@ -34,6 +35,7 @@
       verifying sha256 digest
       writing manifest
       success
+
       >>> Hi there, I'm Sriram
       Hi Sriram! How can I help you today?
 
@@ -56,8 +58,8 @@
       Available Commands:
         /set            Set session variables
         /show           Show model information
-        /load &lt;model>   Load a session or model
-        /save &lt;model>   Save your current session
+        /load <model>   Load a session or model
+        /save <model>   Save your current session
         /clear          Clear session context
         /bye            Exit
         /?, /help       Help for a command
@@ -86,7 +88,7 @@
           completion    
 
         Parameters
-          stop     "&lt;end_of_turn>"    
+          stop     "<end_of_turn>"    
           top_k    64                 
           top_p    0.95               
 
@@ -94,12 +96,13 @@
           Gemma Terms of Use                  
           Last modified: February 21, 2024    
           ...
-      </code></pre>
+    ```
   </details>
 
   <details>
     <summary><strong>2. <code>phi3:latest</code></strong></summary>
-    <pre><code>
+
+    ```terminal
       ~:(0m|git@main) $ ollama run phi3:latest
       pulling manifest
       pulling 633fc5be925f: 100% ████████████████████████████████████████████████████████████████████████████████████████▏ 2.2 GB
@@ -126,5 +129,6 @@
 
       This gives a rough idea based on historical weather patterns, climate data over the past decades suggest that temperatures have been rising with an increased frequency of heatwaves and drought conditions 
       especially during summers affecting agriculture (notably grain crops) in some areas along the east coast like Queensland.
-      </code></pre>
+    ```
+
   </details>
