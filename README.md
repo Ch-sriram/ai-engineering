@@ -132,3 +132,9 @@
     ```
 
   </details>
+
+- Clone the `llm_engineering` repository from <https://github.com/ed-donner/llm_engineering>
+  - Delete the `.git` directory inside the cloned repo, and copy it to your respository.
+- Install `uv` from <https://docs.astral.sh/uv/getting-started/installation/>
+  - Use `brew install uv` if homebrew in alread installed.
+  - Run `uv sync` to build a virtual environment wherever a `requirements.txt` file is present.
